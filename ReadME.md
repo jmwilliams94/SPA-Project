@@ -11,5 +11,5 @@ Your entire app must run on a single page. There should be NO redirects. In othe
 Some interactivity is required. This interactivity needs to incorporate at least 3 separate event listeners. This could be as simple as adding a "like" button or adding comments. These interactions do not need to persist after reloading the page.
 
 Features
-- 
+- My aim is to have ___ work so that it can achieve __.
 - Report a Bug

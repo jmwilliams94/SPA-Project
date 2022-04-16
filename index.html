@@ -6,42 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPA-Project</title>
+    <link rel="stylesheet" href="https://unpkg.com/mustard-ui@latest/dist/css/mustard-ui.min.css">
+    <style>
+        body {
+            width: 95vw;
+            height: 50vh;
+            margin-inline: auto;
+            padding: 10px;
+            padding-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
     <!-- Header Start -->
-    <h1 class="header">Covid-19 Data by Location</h1>
+    <h1 class="">Covid-19 Data by Location</h1>
     <!-- Header End -->
 
     <!-- Search Bar Start -->
-    <div class="search">
-        <h3>Country</h3>
-        <input type="text" placeholder="Search...">
+    <div class="search row">
+        <h3 class="col col-sm-4 align-center">Country</h3>
+        <input class="col col-sm-8" type="text" placeholder="Search...">
     </div>
     <!-- Search Bar End -->
 
     <!-- Mid Start -->
-    <div class="location">
-        <h3>Location</h3>
 
+    <div class="row">Country searched</div>
 
-        <div>
-            <table>
-                <tr>
-                    <th>Confirmed</th>
-                    <th>Recovered</th>
-                    <th>Deaths</th>
-                    <th>Population</th>
-                </tr>
-                <tr>
-                    <td>1,000</td>
-                    <td>50,000</td>
-                    <td>7</td>
-                    <td>27.1M</td>
-                </tr>
-            </table>
-        </div>
+    <div class="row">
+        <div class="col col-sm-3">Total Recovered</div>
+        <div class="col col-sm-3">Total Cases</div>
+        <div class="col col-sm-3">Deaths</div>
+        <div class="col col-sm-3">Active Cases Update</div>
     </div>
     <!-- Mid End -->
 

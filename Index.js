@@ -1,7 +1,6 @@
 
 //fetches API (working)
 // let country = Data which is entered into search bar - then add this as string interpolation to the fetch?
-
 async function fetchAPI(location) {
     fetch(`https://covid-19.dataflowkit.com/v1/${location}`).then(response => {
         return response.json();   
@@ -13,9 +12,11 @@ async function fetchAPI(location) {
 
 fetchAPI();
 
-let customSearch = document.querySelector("searchbar");
 
-addEventListener("click", e => {
+//Adding event listener for searchbar to add entered information to the API call
+const customSearch = document.querySelector(".searchbar");
+
+customSearch.addEventListener("click", e => {
     console.log(e);
 })
 
